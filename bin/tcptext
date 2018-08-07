@@ -1,0 +1,21 @@
+#!/usr/bin/env node
+
+'use strict';
+
+const yargs = require('yargs');
+const tcptext = require('..');
+
+yargs.usage(`Usage: tcptext
+    --port [tcp port] 
+    --host [tcp host, default is 127.0.0.1] 
+    `).help('h').alias('h', 'help');
+
+const {
+  argv
+} = yargs;
+
+tcptext({
+  port: argv.port,
+  host: argv.host || '127.0.0.1',
+  texts: argv._
+});

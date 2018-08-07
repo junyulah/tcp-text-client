@@ -1,0 +1,36 @@
+{
+  "name": "tcp-text-client",
+  "version": "0.0.1",
+  "description": "Simple tcp tool to send text to tcp server",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha test/**/*.js"
+  },
+  "bin": {
+    "tcptext": "./bin/tcptext"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LoveKino/tcp-text-client.git"
+  },
+  "keywords": [
+    "tcp",
+    "text"
+  ],
+  "author": "ddchen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/LoveKino/tcp-text-client/issues"
+  },
+  "homepage": "https://github.com/LoveKino/tcp-text-client#readme",
+  "devDependencies": {
+    "mocha": "^5.2.0"
+  },
+  "dependencies": {
+    "chalk": "^2.4.1",
+    "yargs": "^11.0.0"
+  }
+}
